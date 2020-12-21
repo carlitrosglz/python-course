@@ -91,6 +91,23 @@ def tupleFunction():
     miTupla = ('elemento 1', 'elemento 2', 'elemento 3') # los paréntesis son opcionales
     print(miTupla[1]) # acceso al índice 1 de la tupla
 
+    listaDesdeTupla = list(miTupla) # convierte la tupla en una lista
+    print(listaDesdeTupla)
+
+    tuplaDesdeLista = tuple(listaDesdeTupla) # proceso contrario, convierte la lista en una tupla
+    print(tuplaDesdeLista)
+
+    print('Hola' in miTupla) # True si existe el elemento, False si no existe
+    print(miTupla.count('elemento 1')) # cuenta cuantas veces aparece el argumento pasado a count() dentro de la tupla
+    print(len(miTupla)) # imprime cuantos elementos existen
+
+    miTuplaNueva = ('elemento 1',) # TUPLA UNITARIA. Es necesario poner una coma al final
+    print(len(miTuplaNueva))
+
+    # DESESTRUCTURACIÓN DE TUPLAS. CONCEPTO DE JAVASCRIPT
+    a1, a2, a3 = miTupla
+    print(a1 + a2 + a3)
+
 
 
 # EJECUCIÓN DE LOS EJEMPLOS
