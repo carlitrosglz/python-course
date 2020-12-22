@@ -71,14 +71,13 @@ def listFunction():
 
 #################################################################
 #################################################################
-##################### OPERACIONES CON TUPLAS ####################
+#################### OPERACIONES CON TUPLAS #####################
 #################################################################
 #################################################################
 
 # Las tuplas son listas inmutables
 # No se pueden modificar despues de crearlas
 # No permiten añadir, eliminar, mover elementos
-# No permiten búsquedas (index())
 # Permite extraer porciones, pero el resultado de la extracción es una tupla nueva
 # Permiten comprobar si un elemento existe dentro de la tupla
 
@@ -109,7 +108,51 @@ def tupleFunction():
     print(a1 + a2 + a3)
 
 
+#################################################################
+#################################################################
+################# OPERACIONES CON DICCIONARIOS ##################
+#################################################################
+#################################################################
 
-# EJECUCIÓN DE LOS EJEMPLOS
+# clave - valor
+# almacena valores de cualquier tipo (tanto CLAVE como VALOR)
+# el orden de los elementos es indiferente
+# concepto muy similar al HashMap de Java
+# no pueden existir dos claves iguales. Se sobreescribirá
+
+def dictionaryFunction():
+    miDiccionario = {
+        "Alemania": "Berlin",
+        "Francia": "París",
+        "España": "Madrid"
+    }
+
+    print(miDiccionario) # imprime todos los registros del diccionario
+    print(miDiccionario["Francia"]) # imprime el valor de la clave FRANCIA
+    print(miDiccionario.keys()) # imprime todas las keys del dictionary
+    print(miDiccionario.values()) # imprime todos los valores del dictionary
+    print(len(miDiccionario)) # imprime el tamaño del dictionary
+
+    miDiccionario["Italia"] = "Lisboa" # añade un nuevo registro al diccionario
+    miDiccionario["Italia"] = "Roma" # modifica el valor de la clave ITALIA
+    del miDiccionario["Francia"] # elimina el registro asociado a la clave FRANCIA
+
+    # ASIGNACIÓN DE CLAVES A UN DICCIONARIO MEDIANTE UNA TUPLA
+    tuplaClaves = ("España", "Francia", "Alemania", "Italia")
+    nuevoDictionary = {
+        tuplaClaves[0]: "Madrid",
+        tuplaClaves[1]: "París",
+        tuplaClaves[2]: "Berlín",
+        tuplaClaves[3]: "Roma",
+    }
+
+
+#################################################################
+#################################################################
+#################### EJECUCIÓN DE LOS EJEMPLOS ##################
+#################################################################
+#################################################################
+
 # listFunction()
-tupleFunction()
+# tupleFunction()
+# dictionaryFunction()
