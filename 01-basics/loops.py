@@ -25,3 +25,6 @@ else:
     print("No valido")
 
 # BUCLE WHILE
+    # while CONDICION:
+
+# continue: finaliza la iteración actual del bucle pero lo continua si todavia es posible  
